@@ -1,0 +1,135 @@
+1)API for fetching Token
+    url : http://127.0.0.1:8000/api/token/
+
+    method : POST
+
+    body :{username,password}
+
+    authentication : nill
+
+
+schema : Album
+attributes : {title,year,director,language,created-date,updated_date,is_active}
+
+2)API for Listing Customer
+    url : http://127.0.0.1:8000/api/albums/
+
+    method : GET
+
+    body :nill
+
+    authentication : Tokenauthentication
+
+3)API for Adding albums
+    url : http://127.0.0.1:8000/api/albums/
+
+    method : POST
+
+    body : {title,year,director,language}
+
+    authentication : Tokenauthentication
+
+4)API for Retrieving album
+    url : http://127.0.0.1:8000/api/albums/{id}/
+
+    method : GET
+
+    body :nill
+
+    authentication : Tokenauthentication
+
+5)API for Updating album
+    url : http://127.0.0.1:8000/api/albums/{id}/
+
+    method : PUT
+
+    body : {title,year,director,language}
+
+    authentication : Tokenauthentication
+
+6)API for Deleting album
+    url : http://127.0.0.1:8000/api/albums/{id}/
+
+    method : DELETE
+
+    body :nill
+
+    authentication : Tokenauthentication
+
+
+7)API for adding a track
+
+    url : http://127.0.0.1:8000/api/albums/{id}/add_work/
+
+    method : POST
+
+    body :{title,description,amount}
+
+8)API for Retrieving track
+
+    url : http://127.0.0.1:8000/api/albums/{id}/
+
+    method : GET
+
+    body :nill
+
+    authentication : Tokenauthentication
+
+9)API for Updating track
+
+    url : http://127.0.0.1:8000/api/albums/{id}/
+
+    method : PUT
+
+    body : {title,description,amount}
+
+    authentication : Tokenauthentication
+
+10)API for Deleting track
+
+    url : http://127.0.0.1:8000/api/albums/{id}/
+
+    method : DELETE
+
+    body :nill
+
+    authentication : Tokenauthentication
+
+11)API for adding a review
+
+    url : http://127.0.0.1:8000/api/addreview/{id}/
+
+    method : POST
+
+    body : {comment,rating}
+
+12)API for Retrieving review
+
+    url : http://127.0.0.1:8000/api/review/{id}/
+
+    method : GET
+
+    body :nill
+
+    authentication : Tokenauthentication
+
+13)API for Updating review
+
+    url : http://127.0.0.1:8000/api/review/{id}/
+
+    method : PUT
+
+    body : {comment,rating}
+
+    authentication : Tokenauthentication
+
+14)API for Deleting review
+
+    url : http://127.0.0.1:8000/api/review/{id}/
+
+    method : DELETE
+
+    body :nill
+
+    authentication : Tokenauthentication
+
